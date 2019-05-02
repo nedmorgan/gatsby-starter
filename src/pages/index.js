@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+import Header from "../components/header"
 
 export default () => (
   <div
@@ -10,7 +12,8 @@ export default () => (
       alignItems: `center`,
     }}
   >
-    <h1 style={{ fontSize: `48px` }}>Hello Walter!</h1>
+    <Link to="/contact/">Contact</Link>
+    <Header style={{ fontSize: `48px` }} headerText="Hello Walter!" />
     <p style={{ fontSize: `24px` }}>What a world!</p>
     <img
       style={{ borderRadius: `5px` }}
